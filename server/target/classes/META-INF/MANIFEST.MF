@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Built-By: morgan
+Build-Jdk: 11.0.1
+Class-Path: lib/gson-2.8.5.jar lib/jSerialComm-2.5.1.jar
+Main-Class: com.mxc42.room_server.App
+Created-By: Maven Integration for Eclipse
+

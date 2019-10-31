@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="maven-antrun-" default="main"  >
+<target name="main">
+  <sshexec trust="true" password="groundbiker42" port="22" host="192.168.1.144" failonerror="false" command="mkdir --parents /home/pi/testtest" username="pi" verbose="true"/>
+  <scp trust="true" file="/Users/morgan/projects/room/server2/room_server/target/room_server-0.0.1-SNAPSHOT-jar-with-dependencies.jar" todir="pi:groundbiker42@192.168.1.144:/home/pi/testtest" port="22" failonerror="true" verbose="true"></scp>
+  <sshexec trust="true" password="groundbiker42" port="22" host="192.168.1.144" failonerror="false" command="java -jar /home/pi/testtest/room_server-0.0.1-SNAPSHOT-jar-with-dependencies.jar" username="pi" verbose="true"/>
+</target>
+</project>
