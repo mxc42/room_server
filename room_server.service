@@ -1,0 +1,19 @@
+[Unit]
+Description=Room Server
+After=network.target
+
+[Service]
+
+User=root
+Group=root
+UMask=0007
+RestartSec=10
+Restart=always
+
+WorkingDirectory=/home/pi
+
+ExecStart=/home/pi/room_server/run.sh
+
+[Install]
+WantedBy=multi-user.target
+Alias=room_server.service
