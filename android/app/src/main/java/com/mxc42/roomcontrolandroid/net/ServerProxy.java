@@ -15,7 +15,7 @@ import java.net.URL;
  * server proxy handles all communication with the server. (registering, logging in, getting data).
  */
 public class ServerProxy {
-    private static final String IP_ADDRESS = "http://136.36.103.99:4224";
+    private static final String IP_ADDRESS = "http://136.36.111.27:4224";
     private static final String TAG = "ServerProxy";
     private static final String ENCODING = "UTF-8";
     private static final int TIME_OUT = 3000;
